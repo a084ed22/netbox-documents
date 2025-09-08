@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.7.4 (2025-07-11)
+
+* Fix permissions to allow plugin to be visible for non-superadmin users
+
 ## 0.7.3 (2025-05-06)
 
 * Support for NetBox 4.3
