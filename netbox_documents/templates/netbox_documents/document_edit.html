@@ -5,6 +5,13 @@
 
 {% block form %}
     <div class="field-group my-5">
+      {% if form.assigned_object %}
+        <div class="row mb-2">
+          <h5 class="text-center">Assignment</h5>
+        </div>
+        {% render_field form.assigned_object %}
+      {% endif %}
+
       {% render_field form.name %}
 
       <div class="field-group my-1">

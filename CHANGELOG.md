@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.8.6 (2026-07-24)
+
+* Restore the ability to reassign a document to another object of the same type from the web UI.
+
 ## 0.8.5 (2026-07-02)
 
 * Fix server error (IntegrityError) when adding a document from the sidebar or Documents list page - documents must be added from an object's detail page, so the standalone Add buttons introduced in 0.8.3 have been removed (Fixes #107)

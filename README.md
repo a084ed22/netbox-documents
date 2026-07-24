@@ -15,12 +15,13 @@ A plugin designed to facilitate the storage of documents against any object with
 * Add custom document types via plugin configuration
 * Control which document types are available per model
 * Documents panel appears on object detail pages with permission-aware action buttons
+* Reassign an existing document to another object of the same type from its edit page
 
 ## Compatibility
 
 | NetBox Version | Plugin Version |
 |----------------|----------------|
-|     4.6+       |      0.8.5     |
+|     4.6+       |      0.8.6     |
 |     4.5+       |      0.8.2     |
 |     4.3+       |      0.7.4     |
 |     4.2+       |      0.7.2     |
@@ -201,6 +202,14 @@ PLUGINS_CONFIG = {
     }
 }
 ```
+
+
+## Reassigning Documents
+
+Open an existing document and select **Edit** to change its assigned object. The destination must be another
+instance of the same object type; for example, a document assigned to a Site can be reassigned to another Site.
+The uploaded file remains in its existing storage location, but the document appears on the destination object's
+detail page after saving.
 
 
 ## API Usage
